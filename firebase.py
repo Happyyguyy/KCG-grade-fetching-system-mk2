@@ -1,5 +1,6 @@
 import pyrebase
 import requests
+from apikey import APIKEY
 
 
 class HTTPError (requests.exceptions.HTTPError):
@@ -20,7 +21,7 @@ class HTTPError (requests.exceptions.HTTPError):
 
 
 config = {
-    "apiKey": "AIzaSyBCxSv9K2t35EqFEnH8ZpYVn4DT43WhZSY",
+    "apiKey": APIKEY,
     "authDomain": "kcg-legislator-report-card.firebaseapp.com",
     "databaseURL": "https://kcg-legislator-report-card.firebaseio.com",
     "projectId": "kcg-legislator-report-card",
